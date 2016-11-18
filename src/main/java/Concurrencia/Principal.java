@@ -1,8 +1,11 @@
 
 package Concurrencia;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Principal implements Runnable{
-    /*segunda forma de crear threads implementando 
+   /*segunda forma de crear threads implementando 
     la interfaz runable usando polimorfismo*/
     public static void main(String[] args){
         Runnable r = new Principal();
@@ -19,9 +22,17 @@ public class Principal implements Runnable{
             
            @Override
             public void run() {
-                System.out.print("Soy un backgroud tread");
+                while(true){
+                    
+                
+               try {
+                   Thread.sleep(3000);
+               } catch (InterruptedException ex) {
+                   Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+               }
+               System.out.println("Soy un backgroud thread");
             }
-           
+           }
        });
        t3.start();
     }
@@ -35,5 +46,4 @@ public class Principal implements Runnable{
       else 
           System.out.println("Es mujer");
     }
-     
-   }
+  }
