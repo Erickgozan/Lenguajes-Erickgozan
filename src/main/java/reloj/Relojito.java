@@ -20,8 +20,7 @@ public class Relojito extends javax.swing.JFrame {
      */
     public Relojito() {
         initComponents();        
-        //Aqui creamos el thread 
-        
+        //Aqui creamos el thread       
         Thread t1 = new Thread(new Runnable(){           
            @Override
             public void run() {
