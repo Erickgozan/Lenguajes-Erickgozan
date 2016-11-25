@@ -8,6 +8,7 @@ public class Principal implements Runnable{
    /*segunda forma de crear threads implementando 
     la interfaz runable usando polimorfismo*/
     public static void main(String[] args){
+        
         Runnable r = new Principal();
         Thread t1 = new Thread();
         t1.setName("Juan");
@@ -23,8 +24,7 @@ public class Principal implements Runnable{
            @Override
             public void run() {
                 while(true){
-                    
-                
+                              
                try {
                    Thread.sleep(3000);
                } catch (InterruptedException ex) {
