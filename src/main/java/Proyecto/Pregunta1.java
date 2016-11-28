@@ -6,8 +6,8 @@ import javax.swing.JFrame;
 public class Pregunta1 extends JFrame {
     
     Thread h1;
-    int segundos = 30;
-    boolean loop = true;
+   private int segundos = 30;
+   private boolean loop = true;
    
     private boolean respuesta = false;
 
@@ -25,8 +25,7 @@ public class Pregunta1 extends JFrame {
                             if (segundos == 0) {
                                 loop = false;
                                  new Pregunta2().setVisible(true);
-                                dispose();
-                               
+                                dispose();                               
                             }
                         } else {
                             reloj.setText("0:" + segundos);
@@ -157,7 +156,7 @@ public class Pregunta1 extends JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
            loop = false;
            Pregunta2 pregunta2 = new Pregunta2();
-            pregunta2.setVisible(true);
+           pregunta2.setVisible(true);
             dispose();
             
         if(respuesta){           

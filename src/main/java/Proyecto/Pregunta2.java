@@ -15,8 +15,8 @@ public class Pregunta2 extends javax.swing.JFrame {
      
   static int segundo = 0;
     Thread h1;
-    int segundos = 30;
-    boolean loop = true;
+    private int segundos = 30;
+    private boolean loop = true;
     /**
      * Creates new form Pregunta4
      */

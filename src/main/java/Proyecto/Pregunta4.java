@@ -15,8 +15,8 @@ import javax.swing.JFrame;
 public class Pregunta4 extends javax.swing.JFrame {
     
     Thread h1;
-    int segundos = 30;
-    boolean loop = true;
+    private int segundos = 30;
+    private boolean loop = true;
 
     private boolean respuesta = false;
 

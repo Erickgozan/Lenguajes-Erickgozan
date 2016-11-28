@@ -14,8 +14,8 @@ import javax.swing.JOptionPane;
 public class Pregunta10 extends javax.swing.JFrame {
     
    Thread h1;
-    int segundos = 30;
-    boolean loop = true;
+   private int segundos = 30;
+   private boolean loop = true;
    
     private boolean respuesta = false;
 
@@ -88,7 +88,7 @@ public class Pregunta10 extends javax.swing.JFrame {
         reloj10.setText("Reloj");
 
         buttonGroup1.add(jRadioButton1);
-        jRadioButton1.setText("D.F");
+        jRadioButton1.setText("México D.F");
         jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jRadioButton1ActionPerformed(evt);
