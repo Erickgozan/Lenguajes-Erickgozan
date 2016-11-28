@@ -169,7 +169,7 @@ public class Pregunta7 extends javax.swing.JFrame {
         new Pregunta8().setVisible(true);
         dispose();
         if(respuesta){
-           new Principal().setContador();
+          Principal.contador++;
             respuesta = false;
         }
         

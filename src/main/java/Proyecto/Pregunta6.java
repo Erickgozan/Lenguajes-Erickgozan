@@ -10,7 +10,7 @@ package Proyecto;
  * @author erick
  */
 public class Pregunta6 extends javax.swing.JFrame {
-
+   
    Thread h1;
     private int segundos = 30;
     private boolean loop = true;
@@ -175,7 +175,7 @@ public class Pregunta6 extends javax.swing.JFrame {
         new Pregunta7().setVisible(true);       
         dispose();       
         if(respuesta){
-            new Principal().setContador();
+          Principal.contador++;
             respuesta = false;
         }
     }//GEN-LAST:event_jButton1ActionPerformed

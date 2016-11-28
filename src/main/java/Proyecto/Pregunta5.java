@@ -10,7 +10,7 @@ package Proyecto;
  * @author erick
  */
 public class Pregunta5 extends javax.swing.JFrame {
-            
+    public int acumulador;       
     Thread h1;
     private int segundos = 30;
     private boolean loop = true;
@@ -181,7 +181,7 @@ public class Pregunta5 extends javax.swing.JFrame {
         dispose();
         
         if(respuesta){
-            new Principal().setContador();
+         Principal.contador++;
             respuesta = false;
         }
     }//GEN-LAST:event_jButton1ActionPerformed

@@ -171,7 +171,7 @@ public class Pregunta8 extends javax.swing.JFrame {
         dispose(); 
         loop = false;
         if(respuesta){
-             new Principal().setContador();
+          Principal.contador++;
             respuesta = false;
         }
     }//GEN-LAST:event_jButton1ActionPerformed

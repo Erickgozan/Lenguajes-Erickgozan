@@ -3,21 +3,14 @@ package Proyecto;
 
 public class Principal extends javax.swing.JFrame {
 
-    private static int contador = 1;
+    public static int contador = 0;
   
 
     public Principal() {
         initComponents();    
     }
 
-    public void setContador() {
-        contador++;
-    }
-
-    public int getContador() {
-        return contador;
-    }
-
+   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {

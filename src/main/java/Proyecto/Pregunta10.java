@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author erick
  */
 public class Pregunta10 extends javax.swing.JFrame {
-    
+   
    Thread h1;
    private int segundos = 30;
    private boolean loop = true;
@@ -34,7 +34,7 @@ public class Pregunta10 extends javax.swing.JFrame {
                                 loop = false;
                                 dispose();
                               JOptionPane.showMessageDialog(rootPane, "Tiempo agotado tu calificación es: " 
-                              + new Principal().getContador(), "Tiempo!!", JOptionPane.INFORMATION_MESSAGE);
+                              + Principal.contador, "Tiempo!!", JOptionPane.INFORMATION_MESSAGE);
                             }
                         } else {
                             reloj10.setText("0:" + segundos);
@@ -188,11 +188,11 @@ public class Pregunta10 extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JOptionPane.showMessageDialog(this,"Tuviste : "+ new Principal().getContador()+" aciertos", "Puntaje total ", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this,"Tuviste : "+ Principal.contador +" aciertos", "Puntaje total ", JOptionPane.INFORMATION_MESSAGE);
         dispose();
        loop = false;
         if(respuesta){
-            new Principal().setContador();
+          Principal.contador++;
             respuesta = false;
         }
     }//GEN-LAST:event_jButton1ActionPerformed

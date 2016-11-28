@@ -12,8 +12,6 @@ import java.util.Calendar;
  * @author erick
  */
 public class Pregunta2 extends javax.swing.JFrame {
-     
-  static int segundo = 0;
     Thread h1;
     private int segundos = 30;
     private boolean loop = true;
@@ -181,7 +179,7 @@ public class Pregunta2 extends javax.swing.JFrame {
             pregunta3.setVisible(true);           
             dispose();
         if(respuesta){
-             new Principal().setContador();
+            Principal.contador++;
             respuesta=false;
         }
     }//GEN-LAST:event_jButton1ActionPerformed
