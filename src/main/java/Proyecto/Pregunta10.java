@@ -192,7 +192,7 @@ public class Pregunta10 extends javax.swing.JFrame {
         dispose();
        loop = false;
         if(respuesta){
-          Principal.contador++;
+        Principal.contador++;
             respuesta = false;
         }
     }//GEN-LAST:event_jButton1ActionPerformed

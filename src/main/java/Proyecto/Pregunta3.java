@@ -178,7 +178,7 @@ public class Pregunta3 extends javax.swing.JFrame {
             dispose();
                 
         if(respuesta){                     
-          Principal.contador++;
+         Principal.contador++;
             respuesta = false;
         }        
     }//GEN-LAST:event_jButton1ActionPerformed

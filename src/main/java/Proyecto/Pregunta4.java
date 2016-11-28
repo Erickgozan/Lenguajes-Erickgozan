@@ -195,7 +195,7 @@ public class Pregunta4 extends javax.swing.JFrame {
         pregunta5.setVisible(true);
         dispose();
         if (respuesta) {
-         Principal.contador++;
+          Principal.contador++;
             respuesta = false;
         }
     }//GEN-LAST:event_jButton1ActionPerformed

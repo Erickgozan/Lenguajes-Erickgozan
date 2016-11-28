@@ -157,7 +157,8 @@ public class Pregunta1 extends JFrame {
            pregunta2.setVisible(true);
             dispose();        
         if(respuesta){ 
-           Principal.contador++;
+            Principal.contador++;
+            Principal.contador++;
           respuesta = false;         
         }
     }//GEN-LAST:event_jButton1ActionPerformed
