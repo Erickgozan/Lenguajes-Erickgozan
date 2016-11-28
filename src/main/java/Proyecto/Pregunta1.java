@@ -157,8 +157,7 @@ public class Pregunta1 extends JFrame {
            loop = false;
            Pregunta2 pregunta2 = new Pregunta2();
            pregunta2.setVisible(true);
-            dispose();
-            
+            dispose();        
         if(respuesta){ 
            Principal.contador++;
           respuesta = false;         
