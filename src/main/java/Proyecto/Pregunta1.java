@@ -43,9 +43,7 @@ public class Pregunta1 extends JFrame {
 
         jButton1.setEnabled(false);
         setTitle("Pregunta 1");
-    }
-    
- 
+    }    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
