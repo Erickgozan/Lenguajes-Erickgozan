@@ -138,10 +138,10 @@ public class Pregunta10 extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(151, 151, 151)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jRadioButton2)
                                     .addComponent(jRadioButton1, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jRadioButton3, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton4, javax.swing.GroupLayout.Alignment.LEADING))))
+                                    .addComponent(jRadioButton4, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButton2, javax.swing.GroupLayout.Alignment.LEADING))))
                         .addGap(0, 102, Short.MAX_VALUE)))
                 .addContainerGap())
         );
