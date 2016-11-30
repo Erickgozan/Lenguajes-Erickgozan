@@ -158,9 +158,14 @@ public class Pregunta1 extends JFrame {
             dispose();        
         if(respuesta){ 
             Principal.contador++;
-            Principal.contador++;
-          respuesta = false;         
+          respuesta = false;  
+           if(Principal.contador==1){
+              Principal.contador++;
+              //System.out.println(Principal.contador);
+          }
         }
+        
+         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void Rbtn_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Rbtn_1ActionPerformed
@@ -168,7 +173,7 @@ public class Pregunta1 extends JFrame {
     }//GEN-LAST:event_Rbtn_1ActionPerformed
 
     private void Rbtn_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Rbtn_3ActionPerformed
-            jButton1.setEnabled(true);
+        jButton1.setEnabled(true);
         respuesta = true;
                            
     }//GEN-LAST:event_Rbtn_3ActionPerformed
