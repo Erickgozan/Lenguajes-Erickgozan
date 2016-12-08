@@ -163,8 +163,7 @@ public class Pregunta1 extends JFrame {
               Principal.contador++;
               //System.out.println(Principal.contador);
           }
-        }
-        
+        }       
          
     }//GEN-LAST:event_jButton1ActionPerformed
 
