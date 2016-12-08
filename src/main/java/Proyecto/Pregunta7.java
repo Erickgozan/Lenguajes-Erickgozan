@@ -171,7 +171,7 @@ public class Pregunta7 extends javax.swing.JFrame {
         if(respuesta){
         Principal.contador++;
             respuesta = false;
-            if(Principal.contador==1){
+            if(Principal.contador==0){
               Principal.contador++;
           }
         }

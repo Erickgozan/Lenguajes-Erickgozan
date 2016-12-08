@@ -188,16 +188,17 @@ public class Pregunta10 extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JOptionPane.showMessageDialog(this,"Tuviste : "+ Principal.contador +" aciertos", "Puntaje total ", JOptionPane.INFORMATION_MESSAGE);
-        dispose();
+     
        loop = false;
         if(respuesta){
         Principal.contador++;
             respuesta = false;
-            if(Principal.contador==1){
+            if(Principal.contador==0){
               Principal.contador++;
           }
         }
+        JOptionPane.showMessageDialog(this,"Tuviste : "+ Principal.contador +" aciertos", "Puntaje total ", JOptionPane.INFORMATION_MESSAGE);
+        dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

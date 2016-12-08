@@ -23,6 +23,7 @@ public class Pregunta9 extends javax.swing.JFrame {
         h1 = new Thread(new Runnable() {
 
             public void run() {
+                  
                 while (loop) {
                     segundos--;
                     try {
@@ -171,7 +172,7 @@ public class Pregunta9 extends javax.swing.JFrame {
         if(respuesta){
           Principal.contador++;
             respuesta = false;
-            if(Principal.contador==1){
+            if(Principal.contador==0){
               Principal.contador++;
           }
         }
