@@ -20,29 +20,25 @@ public class Pregunta5 extends javax.swing.JFrame {
     public Pregunta5() {
         initComponents();
 
-        h1 = new Thread(new Runnable() {
-
-            public void run() {
-                while (loop) {
-                    segundos--;
-                    try {
-                        if (segundos <= 9) {
-                            reloj5.setText("0:0" + segundos);
-                            if (segundos == 0) {
-                                loop = false;
-                                dispose();
-                                new Pregunta6().setVisible(true);
-                            }
-                        } else {
-                            reloj5.setText("0:" + segundos);
+        h1 = new Thread(() -> {
+            while (loop) {
+                segundos--;
+                try {
+                    if (segundos <= 9) {
+                        reloj5.setText("0:0" + segundos);
+                        if (segundos == 0) {
+                            loop = false;
+                            dispose();
+                            new Pregunta6().setVisible(true);
                         }
-
-                        Thread.sleep(1000);
-                    } catch (InterruptedException ex) {
-
+                    } else {
+                        reloj5.setText("0:" + segundos);
                     }
+                    
+                    Thread.sleep(1000);
+                } catch (InterruptedException ex) {
+                    
                 }
-
             }
         });
         h1.start();

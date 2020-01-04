@@ -5,8 +5,6 @@
  */
 package Proyecto;
 
-import java.util.Calendar;
-
 /**
  *
  * @author erick
@@ -22,29 +20,25 @@ public class Pregunta3 extends javax.swing.JFrame {
     public Pregunta3() {
         initComponents();
 
-        h1 = new Thread(new Runnable() {
-
-            public void run() {
-                while (loop) {
-                    segundos--;
-                    try {
-                        if (segundos <= 9) {
-                            reloj3.setText("0:0" + segundos);
-                            if (segundos == 0) {
-                                loop = false;
-                                dispose();
-                                new Pregunta4().setVisible(true);
-                            }
-                        } else {
-                            reloj3.setText("0:" + segundos);
+        h1 = new Thread(() -> {
+            while (loop) {
+                segundos--;
+                try {
+                    if (segundos <= 9) {
+                        reloj3.setText("0:0" + segundos);
+                        if (segundos == 0) {
+                            loop = false;
+                            dispose();
+                            new Pregunta4().setVisible(true);
                         }
-
-                        Thread.sleep(1000);
-                    } catch (InterruptedException ex) {
-
+                    } else {
+                        reloj3.setText("0:" + segundos);
                     }
+                    
+                    Thread.sleep(1000);
+                } catch (InterruptedException ex) {
+                    
                 }
-
             }
         });
         h1.start();

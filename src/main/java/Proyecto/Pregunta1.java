@@ -14,29 +14,25 @@ public class Pregunta1 extends JFrame {
     public Pregunta1() {
         initComponents();
 
-        h1 = new Thread(new Runnable() {
-
-            public void run() {
-                while (loop) {
-                    segundos--;
-                    try {
-                        if (segundos <= 9) {
-                            reloj.setText("0:0" + segundos);
-                            if (segundos == 0) {
-                                loop = false;
-                                 new Pregunta2().setVisible(true);
-                                dispose();                               
-                            }
-                        } else {
-                            reloj.setText("0:" + segundos);
+        h1 = new Thread(() -> {
+            while (loop) {
+                segundos--;
+                try {
+                    if (segundos <= 9) {
+                        reloj.setText("0:0" + segundos);
+                        if (segundos == 0) {
+                            loop = false;
+                            new Pregunta2().setVisible(true);
+                            dispose();
                         }
-
-                        Thread.sleep(1000);
-                    } catch (InterruptedException ex) {
-
+                    } else {
+                        reloj.setText("0:" + segundos);
                     }
+                    
+                    Thread.sleep(1000);
+                } catch (InterruptedException ex) {
+                    
                 }
-
             }
         });
         h1.start();

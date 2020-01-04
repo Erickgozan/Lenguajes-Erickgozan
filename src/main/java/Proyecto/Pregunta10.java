@@ -22,30 +22,26 @@ public class Pregunta10 extends javax.swing.JFrame {
     public Pregunta10() {
         initComponents();
 
-        h1 = new Thread(new Runnable() {
-
-            public void run() {
-                while (loop) {
-                    segundos--;
-                    try {
-                        if (segundos <= 9) {
-                            reloj10.setText("0:0" + segundos);
-                            if (segundos == 0) {
-                                loop = false;
-                                dispose();
-                              JOptionPane.showMessageDialog(rootPane, "Tiempo agotado tu calificación es: " 
-                              + Principal.contador, "Tiempo!!", JOptionPane.INFORMATION_MESSAGE);
-                            }
-                        } else {
-                            reloj10.setText("0:" + segundos);
+        h1 = new Thread(() -> {
+            while (loop) {
+                segundos--;
+                try {
+                    if (segundos <= 9) {
+                        reloj10.setText("0:0" + segundos);
+                        if (segundos == 0) {
+                            loop = false;
+                            dispose();
+                            JOptionPane.showMessageDialog(rootPane, "Tiempo agotado tu calificación es: "
+                                    + Principal.contador, "Tiempo!!", JOptionPane.INFORMATION_MESSAGE);
                         }
-
-                        Thread.sleep(1000);
-                    } catch (InterruptedException ex) {
-
+                    } else {
+                        reloj10.setText("0:" + segundos);
                     }
+                    
+                    Thread.sleep(1000);
+                } catch (InterruptedException ex) {
+                    
                 }
-
             }
         });
         h1.start();

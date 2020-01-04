@@ -16,7 +16,7 @@ public class Principal implements Runnable{
         t2.setName("Ana");
        // t1.start();
        //t2.start();
-       
+        
        //tercera form usando clases anonimas
        
        Thread t3 = new Thread(new Runnable(){
